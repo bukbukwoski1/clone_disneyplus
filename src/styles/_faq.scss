@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .faq {
     padding: 5.6vw;
 
@@ -36,6 +38,19 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
+
+                ul {
+                    padding: 0 0 0 40px;
+                }
+
+                li{
+                    margin: 24px 0;
+                    list-style-type: disc;
+                }
+
+                a {
+                    color: variaveis.$corTextoPrincipal;
+                }
             }
 
             &--is-open {
